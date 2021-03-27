@@ -12,7 +12,7 @@ $(document).ready(function() {
 	for (i=0; i<24; i++)	{
 	
 		if (i==12) {
-			$('#board').append("<div data-value='1' class='selected freesquare' id='sqfree'><div class='text'><br/>free space</div></div>");
+			$('#board').append("<div data-value='1' class='selected freesquare' id='sqfree'><div class='text'><br/>free</div></div>");
 			$('#board').append("<div data-value='0' class='square' id='sq12'><div class='text'><br/>"+JSONBingo.squares[i].square+"</div></div>");
 		} else {
 			$('#board').append("<div data-value='0' class='square' id='sq"+i+"'><div class='text'><br/>"+JSONBingo.squares[i].square+"</div></div>");
@@ -28,8 +28,6 @@ $(document).ready(function() {
             //alert(event.target.id);
       		$(this).data('value', 1); }
       		
-         clickSnd.play();
-
 		var row1 = ($('#sq0').data('value')+$('#sq1').data('value')+$('#sq2').data('value')+$('#sq3').data('value')+$('#sq4').data('value'));
 		var row2 = ($('#sq5').data('value')+$('#sq6').data('value')+$('#sq7').data('value')+$('#sq8').data('value')+$('#sq9').data('value'));
 		var row3 = ($('#sq10').data('value')+$('#sq11').data('value')+$('#sqfree').data('value')+$('#sq12').data('value')+$('#sq13').data('value'));
@@ -48,9 +46,7 @@ $(document).ready(function() {
 		if (row1 == 5 || row2 == 5 || row3 == 5 || row4 == 5 || row5 == 5 || col1 == 5 || col2 == 5 || col3 == 5  || col4 == 5  || col5 == 5 || diag1 == 5 || diag2 == 5) {
 			$('#header').html(winText);
 			$('#header').addClass("win");
-	
-         	winSnd.play();
-    		
+	    		
     	} else {
 			$('#header').html(headerText);
 			$('#header').removeClass("win");

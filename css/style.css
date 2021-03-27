@@ -12,8 +12,8 @@
 
 body {
 	background-color: #a1a1a1;
-	background-image: url('../img/red_texture.png');
-	font-family: "BodoniSvtyTwoOSITCTT-Bold", "Georgia", serif;
+	background-image: url('../img/texture.png');
+	font-family: "Helvetica", "Roboto", "Tahoma", serif;
 	text-rendering: optimizeLegibility;
 }
 
@@ -29,20 +29,13 @@ body {
 	display: block;
 	float: left;
 	width: 600px;
-	color: #000000;
+	color: #CCCCCC;
 	opacity: 0.75;
-	text-shadow: 0px 1px 0px #e1e1e1, 0px -1px 0px #313131;
    	background-color: none;
    	text-align: center;
 	font-size: 2.8em;
 	font-weight: bold;
 	padding: 8px 20px 8px 20px;
-	transition-property: background-color;
-	transition-duration: 1s;
-	-moz-transition-property: background-color;
-	-moz-transition-duration: 1s;
-	-webkit-transition-property: background-color;
-	-webkit-transition-duration: 1s;
 }
 
 #footer {
@@ -54,29 +47,28 @@ body {
 
 #footer a {
 	text-decoration: none;
-	color: #8B3E2F;
+	color: #4C4C4C;
 }
 
 #board {
 	display: block;
 	float: left;
 	width: 640px;
-	background-color: #fff;
+	background-color: none;
 	margin-bottom: 10px;
-	box-shadow: 0px 3px #919191;
 }
 
 .square, .freesquare {
 	display: block;
 	float: left;
 	overflow: hidden;
-	background-color: #fff;
-	color: #313131;
+	background-color: none;
+	color: #fff;
 	text-align: center;
 	width: 120px;
 	height: 120px;
 	padding: 3px;
-	border: 1px solid #d1d1d1;
+	border: 1px solid #4C4C4C;
 	transition-property: background-color;
 	transition-duration: 1s;
 	-moz-transition-property: background-color;
@@ -87,11 +79,11 @@ body {
 
 .selected {
 	color: #f1f1f1;
-	background-color: #313131;
+	background-color: #444444;
 }
 
 .text {
-	font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue", Arial, sans-serif;
+	font-family: "Helvetica", "Roboto", "Tahoma", sans-serif;
 	vertical-align: middle;
 	font-size: 1.0em;
 	line-height: 1.1em;
@@ -111,7 +103,11 @@ body {
 
 .win {
 	color: #ffff00 !important;
-   	background-color: black;
+}
+
+#sqfree {
+	color: #000000;
+	font-size: 2.0em;
 }
 
 @media only screen 
