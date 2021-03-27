@@ -1,5 +1,6 @@
 HTML5-bingo
-by J. Hobbs June 2012
+original version by J. Hobbs June 2012
+kays cooking version by imb3cile March 2021
 ---
 
 WHAT IT IS:
@@ -11,7 +12,6 @@ WHAT IT IS:
 * Uses CSS transitions for all animation
 * Uses Media Queries for optimized mobile experience
 * Uses "Hide Address Bar" (via @scottjehl) to hide mobile URL bar
-* Uses HTML5 audio for UI feedback
 * Uses jquery.tappable.js to improve UI performance on mobile
 
 HOW TO USE:
